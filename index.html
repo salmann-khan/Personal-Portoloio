@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salman | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -18,28 +18,39 @@
 
 <header>
     <div class="container nav">
-    <h2 class="logo">Salman.</h2>
+        <h2 class="logo">Salman.</h2>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-    <!-- Social Icons -->
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/salman-khan-a28bbb357/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/_theycallmekhan/" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/salmann-khan" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
+        <!-- Nav Menu -->
+        <div class="nav-menu" id="navMenu">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/salman-khan-a28bbb357/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_theycallmekhan/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/salmann-khan" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </div>
     </div>
-</div>
 </header>
 
 <section id="home" class="hero">
@@ -127,9 +138,13 @@
         <span onclick="closeModal()" class="close">&times;</span>
         <h3 id="modalTitle"></h3>
         <p id="modalText"></p>
+
+        <a id="modalBtn" href="#" target="_blank" class="modal-btn">
+            View Project
+        </a>
     </div>
 </div>
 
-<script src="script.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

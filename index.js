@@ -38,7 +38,14 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+//Animation
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
 
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 // Modal
 function openModal(title, text, link) {
     document.getElementById("modalTitle").innerText = title;
@@ -68,5 +75,11 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
         this.reset();
     }, () => {
         alert("Failed to send message.");
+    });
+});
+document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
     });
 });
